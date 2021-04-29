@@ -1,8 +1,5 @@
 function dragElement(element){
-    console.log("test");
-    console.log(element);
     $(element).on("mousedown", function(e){
-
         let element = $(this);
         
         let draggable = $(this).addClass("draggable");
@@ -30,7 +27,6 @@ $(document).ready(function(){
         let field = $(".dragable-field");
         field.empty();
         for(let i = 0; i < $(this).val(); i++){
-            console.log(i);
             field.append($(showcaseElement));
         }
         dragElement('.dragable-field div');
